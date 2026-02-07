@@ -1,0 +1,23 @@
+# Image Stitching and Panorama Project
+# Python Dependencies
+
+# Core computer vision library
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0
+
+# Numerical computing
+numpy>=1.19.0
+
+# Data visualization
+matplotlib>=3.3.0
+
+# Configuration management
+PyYAML>=5.3
+
+# Optional: For enhanced performance
+scipy>=1.5.0
+
+# Development and testing (optional)
+# pytest>=6.0.0
+# black>=21.0
+# pylint>=2.6.0

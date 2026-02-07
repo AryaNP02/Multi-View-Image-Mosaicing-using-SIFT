@@ -1,0 +1,46 @@
+# Image Stitching Configuration File
+
+# SIFT Feature Detection Parameters
+sift:
+  enabled: true
+
+# Matching Parameters
+matching:
+  knn_match_k: 2
+  distance_ratio: 0.75  # Lowe's ratio test threshold
+
+# RANSAC Parameters for Homography Matrix Estimation
+ransac:
+  iterations: 100
+  error_threshold: 15  # Pixel error threshold
+  min_inliers: 4
+
+# Image Processing Parameters
+image:
+  resize_enabled: false
+  resize_width: 1000
+
+# Stitching Mode
+stitching:
+  mode: "ordered"  # Options: "ordered" or "unordered"
+  display_matches: true
+  visualization: true
+
+# Input/Output Paths
+paths:
+  images_dir: "./images"
+  output_dir: "./output"
+  
+  # Example image paths
+  image_sets:
+    set1:
+      - "./images/raw_frames/img1_1.jpg"
+      - "./images/raw_frames/img1_2.jpg"
+      - "./images/raw_frames/img1_3.jpg"
+      - "./images/raw_frames/img1_4.jpg"
+    
+# Logging
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  save_logs: false
+  log_file: "./logs/stitching.log"
